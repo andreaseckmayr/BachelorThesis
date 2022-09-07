@@ -1,0 +1,341 @@
+\chapter{Datensatzbeschreibung "OWID Coronavirus"}
+\label{app:OWID-API}
+
+\begin{description}
+
+    \item[iso\_code]
+    ISO\ 3166-1 alpha-3 – three-letter country codes. Note that OWID-defined regions (e.g. continents like 'Europe') contain prefix 'OWID\_'.\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{International Organization for Standardization}\\
+
+    \item[continent] 
+    Continent of the geographical location\\
+    \emph{\footnotesize{Others}}\\
+    Our World in Data\\
+
+    \item[location] 
+    Geographical location. Location 'International' considers special regions ("Diamond Princess" and "MS Zaandam" cruises).\\
+    \emph{\footnotesize{Others}}\\
+    Our World in Data\\
+
+    \item[date] 
+    Date of observation\\
+    \emph{\footnotesize{Others}}\\
+    Our World in Data\\
+
+    \item[total\_cases] 
+    Total confirmed cases of COVID-19. Counts can include probable cases, where reported.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_cases] 
+    New confirmed cases of COVID-19. Counts can include probable cases, where reported. In rare cases where our source reports a negative daily change due to a data correction, we set this metric to NA.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_cases\_smoothed] 
+    New confirmed cases of COVID-19 (7-day smoothed). Counts can include probable cases, where reported.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[total\_deaths] 
+    Total deaths attributed to COVID-19. Counts can include probable deaths, where reported.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_deaths] 
+    New deaths attributed to COVID-19. Counts can include probable deaths, where reported. In rare cases where our source reports a negative daily change due to a data correction, we set this metric to NA.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_deaths\_smoothed] 
+    New deaths attributed to COVID-19 (7-day smoothed). Counts can include probable deaths, where reported.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[total\_cases\_per\_million] 
+    Total confirmed cases of COVID-19 per 1,000,000 people. Counts can include probable cases, where reported.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_cases\_per\_million] 
+    New confirmed cases of COVID-19 per 1,000,000 people. Counts can include probable cases, where reported.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_cases\_smoothed\_per\_million] 
+    New confirmed cases of COVID-19 (7-day smoothed) per 1,000,000 people. Counts can include probable cases, where reported.\\
+    \emph{\footnotesize{Confirmed cases}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[total\_deaths\_per\_million] 
+    Total deaths attributed to COVID-19 per 1,000,000 people. Counts can include probable deaths, where reported.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_deaths\_per\_million] 
+    New deaths attributed to COVID-19 per 1,000,000 people. Counts can include probable deaths, where reported.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[new\_deaths\_smoothed\_per\_million] 
+    New deaths attributed to COVID-19 (7-day smoothed) per 1,000,000 people. Counts can include probable deaths, where reported.\\
+    \emph{\footnotesize{Confirmed deaths}}\\
+    \footnotesize{COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University}\\
+
+    \item[reproduction\_rate] 
+    Real-time estimate of the effective reproduction rate (R) of COVID-19. See https://github.com/crondonm/TrackingR/tree/main/Estimates-Database\\
+    \emph{\footnotesize{Reproduction rate}}\\
+    \footnotesize{Arroyo Marioli et al. (2020). https://doi.org/10.2139/ssrn.3581633}\\
+
+    \item[icu\_patients] 
+    Number of COVID-19 patients in intensive care units (ICUs) on a given day\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[icu\_patients\_per\_million] 
+    "Number of COVID-19 patients in intensive care units (ICUs) on a given day per 1,000,000 people"\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[hosp\_patients] 
+    Number of COVID-19 patients in hospital on a given day\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[hosp\_patients\_per\_million] 
+    Number of COVID-19 patients in hospital on a given day per 1,000,000 people\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[weekly\_icu\_admissions] 
+    Number of COVID-19 patients newly admitted to intensive care units (ICUs) in a given week (reporting date and the preceeding 6 days)\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[weekly\_icu\_admissions\_per\_million] 
+    Number of COVID-19 patients newly admitted to intensive care units (ICUs) in a given week per 1,000,000 people (reporting date and the preceeding 6 days)\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[weekly\_hosp\_admissions] 
+    Number of COVID-19 patients newly admitted to hospitals in a given week (reporting date and the preceeding 6 days)\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[weekly\_hosp\_admissions\_per\_million] 
+    Number of COVID-19 patients newly admitted to hospitals in a given week per 1,000,000 people (reporting date and the preceeding 6 days)\\
+    \emph{\footnotesize{Hospital \& ICU}}\\
+    \footnotesize{National government reports and European CDC}\\
+
+    \item[total\_tests] 
+    Total tests for COVID-19\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_tests] 
+    New tests for COVID-19 (only calculated for consecutive days)\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[total\_tests\_per\_thousand] 
+    Total tests for COVID-19 per 1,000 people\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_tests\_per\_thousand] 
+    New tests for COVID-19 per 1,000 people\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_tests\_smoothed] 
+    New tests for COVID-19 (7-day smoothed). For countries that don't report testing data on a daily basis, we assume that testing changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_tests\_smoothed\_per\_thousand] 
+    New tests for COVID-19 (7-day smoothed) per 1,000 people\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[positive\_rate] 
+    The share of COVID-19 tests that are positive, given as a rolling 7-day average (this is the inverse of tests\_per\_case)\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[tests\_per\_case] 
+    Tests conducted per new confirmed case of COVID-19, given as a rolling 7-day average (this is the inverse of positive\_rate)\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[tests\_units] 
+    Units used by the location to report its testing data. A country file can't contain mixed units. All metrics concerning testing data use the specified test unit. Valid units are 'people tested' (number of people tested), 'tests performed' (number of tests performed. a single person can be tested more than once in a given day) and 'samples tested' (number of samples tested. In some cases, more than one sample may be required to perform a given test.)\\
+    \emph{\footnotesize{Tests \& positivity}}\\
+    \footnotesize{National government reports}\\
+
+    \item[total\_vaccinations] 
+    Total number of COVID-19 vaccination doses administered\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[people\_vaccinated] 
+    Total number of people who received at least one vaccine dose\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[people\_fully\_vaccinated] 
+    Total number of people who received all doses prescribed by the initial vaccination protocol\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[total\_boosters] 
+    Total number of COVID-19 vaccination booster doses administered (doses administered beyond the number prescribed by the vaccination protocol)\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_vaccinations] 
+    New COVID-19 vaccination doses administered (only calculated for consecutive days)\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_vaccinations\_smoothed] 
+    New COVID-19 vaccination doses administered (7-day smoothed). For countries that don't report vaccination data on a daily basis, we assume that vaccination changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[total\_vaccinations\_per\_hundred] 
+    Total number of COVID-19 vaccination doses administered per 100 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[people\_vaccinated\_per\_hundred] 
+    Total number of people who received at least one vaccine dose per 100 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[people\_fully\_vaccinated\_per\_hundred] 
+    Total number of people who received all doses prescribed by the initial vaccination protocol per 100 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[total\_boosters\_per\_hundred] 
+    Total number of COVID-19 vaccination booster doses administered per 100 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_vaccinations\_smoothed\_per\_million] 
+    New COVID-19 vaccination doses administered (7-day smoothed) per 1,000,000 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_people\_vaccinated\_smoothed] 
+    Daily number of people receiving their first vaccine dose (7-day smoothed)\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[new\_people\_vaccinated\_smoothed\_per\_hundred] 
+    Daily number of people receiving their first vaccine dose (7-day smoothed) per 100 people in the total population\\
+    \emph{\footnotesize{Vaccinations}}\\
+    \footnotesize{National government reports}\\
+
+    \item[stringency\_index] 
+    Government Response Stringency Index: composite measure based on 9 response indicators including school closures, workplace closures, and travel bans, rescaled to a value from 0 to 100 (100 = strictest response)\\
+    \emph{\footnotesize{Policy responses}}\\
+    \footnotesize{Oxford COVID-19 Government Response Tracker, Blavatnik School of Government}\\
+
+    \item[population] 
+    Population (latest available values). See https://github.com/owid/covid-19-data/blob/master/scripts/input/un/population\_latest.csv for full list of sources\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{United Nations, Department of Economic and Social Affairs, Population Division, World Population Prospects 2019 Revision}\\
+
+    \item[population\_density] 
+    Number of people divided by land area, measured in square kilometers, most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, sourced from Food and Agriculture Organization and World Bank estimates}\\
+
+    \item[median\_age] 
+    Median age of the population, UN projection for 2020\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{UN Population Division, World Population Prospects, 2017 Revision}\\
+
+    \item[aged\_65\_older] 
+    Share of the population that is 65 years and older, most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators based on age/sex distributions of United Nations World Population Prospects 2017 Revision}\\
+
+    \item[aged\_70\_older] 
+    Share of the population that is 70 years and older in 2015\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{United Nations, Department of Economic and Social Affairs, Population Division (2017), World Population Prospects 2017 Revision}\\
+
+    \item[gdp\_per\_capita] 
+    Gross domestic product at purchasing power parity (constant 2011 international dollars), most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, source from World Bank, International Comparison Program database}\\
+
+    \item[extreme\_poverty] 
+    Share of the population living in extreme poverty, most recent year available since 2010\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, sourced from World Bank Development Research Group}\\
+
+    \item[cardiovasc\_death\_rate] 
+    Death rate from cardiovascular disease in 2017 (annual number of deaths per 100,000 people)\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{Global Burden of Disease Collaborative Network, Global Burden of Disease Study 2017 Results}\\
+
+    \item[diabetes\_prevalence] 
+    Diabetes prevalence (\% of population aged 20 to 79) in 2017\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, sourced from International Diabetes Federation, Diabetes Atlas}\\
+
+    \item[female\_smokers] 
+    Share of women who smoke, most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository}\\
+
+    \item[male\_smokers] 
+    Share of men who smoke, most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{World Bank World Development Indicators, sourced from World Health Organization, Global Health Observatory Data Repository}\\
+
+    \item[handwashing\_facilities] 
+    Share of the population with basic handwashing facilities on premises, most recent year available\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{United Nations Statistics Division}\\
+
+    \item[hospital\_beds\_per\_thousand] 
+    Hospital beds per 1,000 people, most recent year available since 2010\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{OECD, Eurostat, World Bank, national government records and other sources}\\
+
+    \item[life\_expectancy] 
+    Life expectancy at birth in 2019\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{James C. Riley, Clio Infra, United Nations Population Division}\\
+
+    \item[human\_development\_index] 
+    A composite index measuring average achievement in three basic dimensions of human development—a long and healthy life, knowledge and a decent standard of living. Values for 2019, imported from http://hdr.undp.org/en/indicators/137506\\
+    \emph{\footnotesize{Others}}\\
+    \footnotesize{United Nations Development Programme (UNDP)}\\
+
+    \item[excess\_mortality] 
+    Percentage difference between the reported number of weekly or monthly deaths in 2020–2021 and the projected number of deaths for the same period based on previous years. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess\_mortality\\
+    \emph{\footnotesize{Excess mortality}}\\
+    \footnotesize{Human Mortality Database (2021), World Mortality Dataset (2021)}\\
+
+    \item[excess\_mortality\_cumulative] 
+    Percentage difference between the cumulative number of deaths since 1 January 2020 and the cumulative projected deaths for the same period based on previous years. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess\_mortality\\
+    \emph{\footnotesize{Excess mortality}}\\
+    \footnotesize{Human Mortality Database (2021), World Mortality Dataset (2021)}\\
+
+    \item[excess\_mortality\_cumulative\_absolute] 
+    Cumulative difference between the reported number of deaths since 1 January 2020 and the projected number of deaths for the same period based on previous years. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess\_mortality\\
+    \emph{\footnotesize{Excess mortality}}\\
+    \footnotesize{Human Mortality Database (2021), World Mortality Dataset (2021)}\\
+
+    \item[excess\_mortality\_cumulative\_per\_million] 
+    Cumulative difference between the reported number of deaths since 1 January 2020 and the projected number of deaths for the same period based on previous years, per million people. For more information, see https://github.com/owid/covid-19-data/tree/master/public/data/excess\_mortality\\
+    \emph{\footnotesize{Excess mortality}}\\
+    \footnotesize{Human Mortality Database (2021), World Mortality Dataset (2021)}\\
+
+\end{description}

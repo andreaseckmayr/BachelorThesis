@@ -1,0 +1,85 @@
+%%% File encoding: UTF-8
+%%% äöüÄÖÜß  <-- keine deutschen Umlaute hier? UTF-faehigen Editor verwenden!
+
+%%% Magic Comments zum Setzen der korrekten Parameter in kompatiblen IDEs
+% !TeX encoding = utf8
+% !TeX program = pdflatex 
+% !TeX spellcheck = de_DE
+% !BIB program = biber
+
+\documentclass[bachelor,german,smartquotes]{hgbthesis}
+% Zulässige Optionen in [..]: 
+%   Typ der Arbeit: diploma, master (default), bachelor, internship
+%   Hauptsprache: german (default), english
+%	smartquotes: zur vereinfachten Eingabe von Hochkommas (nur "...")
+%%%----------------------------------------------------------
+
+\RequirePackage[utf8]{inputenc}		% bei der Verw. von lualatex oder xelatex entfernen!
+
+\graphicspath{{images/}}    % Verzeichnis mit Bildern und Grafiken
+\logofile{logo}				% Logo-Datei = images/logo.pdf (\logofile{}, wenn kein Logo gewünscht)
+\bibliography{references}  	% Biblatex-Literaturdatei (references.bib)
+
+%%%----------------------------------------------------------
+% Angaben für die Titelei (Titelseite, Erklärung etc.)
+%%%----------------------------------------------------------
+
+% /* cSpell:enable */
+% /* cSpell:locale de,en */
+
+\title{Wirksamkeit der COVID-19-Impfung und Maßnahmen}
+\author{Andreas Eckmayr}
+
+\programtype{Fachhochschul-Bachelorstudiengang}
+
+\programname{Medizin- und Bioinformatik}
+\placeofstudy{Hagenberg}
+\dateofsubmission{2022}{08}{31}
+
+\advisor{FH-Prof. MMag. Dr. Gerald Lirk}
+
+% /* cSpell:disable */
+
+%\strictlicense		%%% restrictive license instead of Creative Commons (discouraged!)
+
+%%%----------------------------------------------------------
+\begin{document}
+%%%----------------------------------------------------------
+
+%%%----------------------------------------------------------
+\frontmatter                    % Titelei (röm. Seitenzahlen)
+%%%----------------------------------------------------------
+
+\maketitle
+\tableofcontents
+
+%\include{front/vorwort} 				% Vorwort ist optional
+\include{front/kurzfassung}		
+\include{front/abstract}			
+
+%%%----------------------------------------------------------
+\mainmatter          % Hauptteil (ab hier arab. Seitenzahlen)
+%%%----------------------------------------------------------
+
+\include{chapters/einleitung}
+\include{chapters/daten}
+\include{chapters/umfrage}
+\include{chapters/schluss}
+
+%%%----------------------------------------------------------
+\appendix                                            % Anhang 
+%%%----------------------------------------------------------
+\include{back/anhang_fragebogen}
+\include{back/anhang_tabellen}
+\include{back/anhang_owid-api}
+
+%%%----------------------------------------------------------
+\MakeBibliography                        % Quellenverzeichnis
+%%%----------------------------------------------------------
+
+%%% Messbox zur Druckkontrolle ------------------------------
+\include{back/messbox}
+
+%%%----------------------------------------------------------
+\end{document}
+%%%----------------------------------------------------------
